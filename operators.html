@@ -44,7 +44,7 @@
        }
         </script>
         <script>
-            var age = 100;
+            var age = 19;
             if(age>=18 && age<=100){
                 document.write("Elegible for vote");
                 document.write("<br>");
@@ -64,7 +64,8 @@
             }
 
             var age = 17;
-            var eligiblity
+            var eligiblity = (age>=18) ? "Elegible for vote" : "Not Elegible for vote";
+            document.write(eligiblity);
         </script>
 </body>
 </html>

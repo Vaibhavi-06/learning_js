@@ -7,9 +7,10 @@
 </head>
 <body>
     <script>
-        var per = 33;
+        var per = prompt("Enter your marks:");
+        per = parseInt(per);
 
-        if(per>80 && per<=100){
+        if(per>=80 && per<=100){
             document.write("You are in destinction");
         }else if(per>=60 && per <80){
             document.write("You are in 1st class");

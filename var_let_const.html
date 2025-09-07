@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        var fname = "Anand";
+        var fname = "Vaibhavi"; //redeclare allow
+        fname = "Dipali"; //re-assign allowed
+        document.write(fname);
+
+        let lname = "Fulsundar";
+    // let lname ="ssss"; redeclare not allowed
+    lname = "wagh"; //re-assign allowed
+
+    document.write(lname);
+
+    const pi = 3.14;
+    //const pi = 4.15;
+    //pi = 45.67;
+    document.write(pi);
+    </script>
+
+        <script>
+            //global scope
+        var x = 101;
+        let y = 102;
+        const z = 103;
+
+        function scopeExample(){
+            var x = 1;//function scope
+            let y = 2;// block scope
+            const z = 3;//block
+            if(true) //inside this block
+            { 
+                var x= 10; //reassign x (function scoped)
+                let y = 20; // y only for this bolck
+                const z = 30; // z only for this bolck
+                document.write(x); //10
+                document.write(y);//20
+                document.write(z);//30
+                document.write("<br>"); //10 20 30
+            }
+            //outside the block but inside the function
+                document.write(x);//10
+                document.write(y);//2
+                document.write(z);//3
+                document.write("<br>"); // 10 2 3
+        }
+        //call function
+        scopeExample();
+                document.write(x);
+                document.write(y);
+                document.write(z);
+                
+    </script>
+    </body>
 </html>

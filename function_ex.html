@@ -38,12 +38,42 @@
             </div>
         </div>
     </div>
-    <script></script>
     <script>
         var a,b,result;
         function add()
         {
             a=Number(document.myform.n1.value); //1
+            b=Number(document.myform.n2.value); //2
+            result=a+b; //1 + 2
+
+            document.myform.res.value=result.toFixed(3); //3
+        }
+
+        function sub()
+        {
+            a=Number(document.myform.n1.value); //1
+            b=Number(document.myform.n2.value); //2
+            result=a-b; //1 - 2
+
+            document.myform.res.value=result.toFixed(3); //3
+        }
+
+        function multi()
+        {
+            a=Number(document.myform.n1.value); //1
+            b=Number(document.myform.n2.value); //2
+            result=a*b; //1 * 2
+
+            document.myform.res.value=result.toFixed(3); //3
+        }
+
+        function div()
+        {
+            a=Number(document.myform.n1.value); //1
+            b=Number(document.myform.n2.value); //2
+            result=a/b; //1 / 2
+
+            document.myform.res.value=result.toFixed(3); //3
         }
     </script>
 </body>
